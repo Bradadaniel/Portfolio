@@ -1,0 +1,87 @@
+.hero{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+.hero .containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+}
+.hero .containers .left{
+    max-width: 600px;
+}
+.hero .containers .left span{
+    color: crimson;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.hero .containers .left h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.hero .containers .left p{
+    color: #fff;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.hero .containers .left a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    background: crimson;
+    font-size: 1rem;
+    margin: 10px 0;
+    transition: .3s ease-in-out;
+}
+.hero .containers .left a:hover{
+    box-shadow: 10px 10px 57px 15px rgba(224,9,9,0.67);
+}
+.hero .containers .right{
+    max-width: 500px;
+    align-items: end;
+}
+.hero .containers .right img{
+    width: 100%;
+    height: 100%;
+}
+.hero .left,
+.hero .right{
+    position: relative;
+    z-index: 200;
+}
+.custom-shape-divider-top-1710921661 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.custom-shape-divider-top-1710921661 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1710921661 .shape-fill {
+    fill: #444444;
+}
+
+@media (max-width: 1100px){
+    .hero .containers .right img{
+        display: none;
+    }
+    .hero .containers .left{
+        padding: 0 2rem;
+    }
+}

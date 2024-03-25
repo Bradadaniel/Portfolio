@@ -1,0 +1,119 @@
+.experience{
+    height: 100%;
+    background: linear-gradient(to right, #333 50%, #222 50%);
+}
+.experience-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 4rem 0;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+    width: 270px;
+    height: 300px;
+    background: #444;
+    box-shadow: 6px 9px 40px 7px rgba(0,0,0,0.44);
+    transition: .3s ease-in-out;
+}
+.box:hover{
+    background: crimson;
+}
+.box i{
+    color: crimson;
+    font-size: 2rem;
+    padding: 1rem;
+}
+.box:hover i{
+    color: #fff;
+}
+.box h3{
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.box p{
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 1rem;
+}
+.experience-exp-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.experience-exp-box .right-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+.experience-exp-box .right-container .box{
+    height: 140px;
+    width: 270px;
+}
+.experience-exp-box .left-container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+}
+.experience-exp-box .left-container .box h1{
+    color: crimson;
+    font-size: 4rem;
+}
+.experience-exp-box .left-container .box p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+}
+.experience-exp-box .right-container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.experience-exp-box .right-container .box h3{
+    color: crimson;
+    font-size:1.8rem;
+    padding: 0;
+}
+.experience-exp-box .right-container .box:hover h3{
+    color: #fff;
+}
+.experience-exp-box .right-container .box p{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0;
+}
+@media (max-width: 850px){
+    .experience-exp-box {
+        flex-direction: column;
+    }
+    .experience-exp-box .left-container{
+        margin: 0 auto;
+    }
+    .experience-exp-box .right-container{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px){
+    .experience-exp-box .right-container{
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 10px;
+    }
+}

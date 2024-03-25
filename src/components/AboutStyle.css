@@ -1,0 +1,59 @@
+.about{
+    margin: 0 auto;
+}
+.about h1{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+.about-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+.about-containers h3{
+    font-size: 1.3rem;
+    color: crimson;
+    padding-bottom: 1rem;
+    text-align: start;
+}
+.about-containers .left-container{
+    width: 350px;
+}
+.about-containers .left-container .icons-box{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.about-containers .left-container .icons-box .icon{
+    width: 80px;
+    height: 80px; 
+}
+.about-containers .right-container{
+    width: 600px;
+}
+.about-containers .right-container p{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.about-containers .right-container a{
+    font-size: 1rem;
+    color: #fff;
+    background: crimson;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.about-containers .right-container a:hover{
+    box-shadow: 10px 10px 57px 15px rgba(224,9,9,0.67);
+}
+@media (max-width: 950px){
+    .about-containers .right-container{
+        padding: 0 3rem;
+    }
+}
